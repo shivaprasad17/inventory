@@ -1,0 +1,70 @@
+#container {  
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+    border: 1px solid gainsboro;
+    padding: 10px;
+    min-width:  320px;
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 0;
+    color: #8c8c8c;
+    margin-top: 10px;
+    text-align: end;
+  }
+  #container h2{
+      text-align: left;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  .forgot-rem{
+      display: flex;
+      margin-top: 20px;
+  }
+  .col1{
+      width: 50%;
+  }
+  #remeber_me{
+      padding-left: 10px;
+  }
+  #login{
+    width: -webkit-fill-available;
+  }
+  .orWrapper{
+    display: flex;
+    margin-top: 15px;
+}
+  .orDiv{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(var(--f52,142,142,142),1);
+  }
+  .horizontalDiv{
+    flex-grow: 1;
+    flex-shrink: 1;
+    -webkit-box-flex: 1;
+    background-color: rgba(var(--b38,219,219,219),1);
+    height: 1px;
+    position: relative;
+    top: .45em;
+  }
+  .loginDiv{
+      margin-top: 20px;
+  }
+  img{
+      height: 100px;
+  }

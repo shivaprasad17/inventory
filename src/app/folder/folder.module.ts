@@ -7,14 +7,19 @@ import { IonicModule } from '@ionic/angular';
 import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {InventoriesComponent} from './inventories/inventories.component';
+import {CustomersComponent} from './customers/customers.component'
+import {ComponentsModule} from '../components/components.module'
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FolderPageRoutingModule
+    FolderPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [FolderPage]
+  declarations: [FolderPage,DashboardComponent,InventoriesComponent,CustomersComponent]
 })
 export class FolderPageModule {}

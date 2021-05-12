@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {LoginService} from '../app/providers/login.service';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -6,13 +8,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Dashboard', url: '/folder/dashboard', icon: 'grid' },
+    { title: 'Inventories', url: '/folder/inventories', icon: 'business' },
+    { title: 'Customers', url: '/folder/customers', icon: 'people' },
+    { title: 'Item Group', url: '/folder/itemgroup', icon: 'folder-open'},
+    { title: 'Item', url: '/folder/item', icon: 'document' },
+    { title: 'Scales Order', url: '/folder/scalesorder', icon: 'cart' },
+    { title: 'Purchase Order', url: '/folder/purchaseorder', icon: 'clipboard' },
   ];
+  //public islog=localStorage.getItem('isLogin')
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  constructor(public loginService:LoginService,public router:Router) {
+   
+   if(localStorage.getItem('isLogin') && localStorage.getItem('isLogin')==='true'){
+    this.loginService.isLogin=true
+    //this.router.navigate(['/folder/dashboard'])
+
+   }
+  }
 }

@@ -1,0 +1,52 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div style="text-align: center;">
+      <img src="../../assets/icon/soocheelogo.png">
+    </div>
+    <h2>Login</h2>
+    <ion-item>
+      <ion-label position="floating">User Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="Password"></ion-input>
+    </ion-item>
+    <div class="loginDiv">
+      <ion-button expand="block" id="login" (click)="login()">Login</ion-button>
+    </div>
+
+    <div class="forgot-rem">
+      <div class="col1">
+        <ion-checkbox slot="end" ></ion-checkbox>
+        <ion-label id="remeber_me">Remeber Me</ion-label>
+      </div>
+     <div class="col1"> 
+      <p> <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">Forgot Password?</a></p>
+     </div>
+    </div>
+    <div class="orWrapper">
+        <div class="horizontalDiv"></div>
+        <div class="orDiv">OR</div>
+        <div class="horizontalDiv"></div>
+    </div>
+    <ion-button color="danger" expand="block" id="login">SignUp with Google</ion-button>
+  </div>
+
+  
+</ion-content>

@@ -1,0 +1,97 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="business-outline" size="large" id="inventorieIcon"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <!-- <img src="../../assets/icon/soocheelogo.png" style="height: 50px;"> -->
+      Add Inventory</ion-title>
+      <ion-buttons slot="end" (click)="closeModal()">
+        <ion-icon name="close-outline" size="large"></ion-icon>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" >
+          <ion-item lines="full" class="formItem">
+            <ion-label position="floating">Warehouse Name</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">Street Line 1</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">Street Line 2</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+       
+      </ion-col>
+
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">City</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+     
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">State</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+ 
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">Country</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">Postal Code</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">Phone</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-item lines="full" class="formItem">
+          <ion-label position="fixed">Email</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+      </ion-col>
+      <!-- <ion-col size="12" >
+        <ion-item-divider>
+       
+        </ion-item-divider>
+        <ion-item>
+          <ion-button color="secondary" slot="end">Submit </ion-button>
+          <ion-button slot="end" (click)="closeModal()">Cancel</ion-button>
+        </ion-item>
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
+      
+</form>
+</ion-content>
+<ion-footer>
+  <ion-item>
+    <ion-button color="secondary" slot="end">Submit </ion-button>
+    <ion-button slot="end" (click)="closeModal()">Cancel</ion-button>
+  </ion-item>
+</ion-footer>
