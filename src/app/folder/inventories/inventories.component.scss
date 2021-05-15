@@ -1,0 +1,38 @@
+.detailsWrapper{
+    text-align: justify;
+    margin-top: 20px;
+}
+.inventortDetails{
+    text-align: justify;
+}
+.editIcon{
+    float: right;
+    background-color: white;
+    color: white;
+}
+.edit{
+    font-size: 20px;
+    color: #2fa3e6;
+    margin: 3px; 
+}
+.trash{
+    font-size: 20px;
+
+    margin: 3px; 
+}
+.cardwrapper{
+    height: 350px;
+    overflow-y: auto;
+}
+.iventorySummary{
+    display: flex;
+    margin-top: 25px;
+}
+.iconwrapper{
+    margin: 10px;
+}
+.inventoryWrapper{
+    height: 100%;
+    position: absolute;
+    overflow-y: auto;
+}

@@ -11,7 +11,7 @@ export class AppComponent {
     { title: 'Dashboard', url: '/folder/dashboard', icon: 'grid' },
     { title: 'Inventories', url: '/folder/inventories', icon: 'business' },
     { title: 'Customers', url: '/folder/customers', icon: 'people' },
-    { title: 'Item Group', url: '/folder/itemgroup', icon: 'folder-open'},
+    { title: 'Folder', url: '/folder/Folder', icon: 'folder-open'},
     { title: 'Item', url: '/folder/item', icon: 'document' },
     { title: 'Scales Order', url: '/folder/scalesorder', icon: 'cart' },
     { title: 'Purchase Order', url: '/folder/purchaseorder', icon: 'clipboard' },

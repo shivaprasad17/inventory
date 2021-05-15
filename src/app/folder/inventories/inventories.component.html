@@ -1,21 +1,162 @@
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
+<div class="inventoryWrapper">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md>
+          <ion-card class="cardwrapper">
+            <ion-card-header class="inventortDetails">
+              <div style="display: flex;">
+                <div style="width: 80%;">
+                  <ion-card-title>Card Title</ion-card-title>
+                </div>
+               <div style="display: flex;">
+                <div (click)="openmodal()">
+                  <ion-icon  color="primary" class="edit" name="create-outline"></ion-icon>
+                </div>
+                <div (click)="openmodal()">
+               <ion-icon class="trash" color="danger" name="trash-outline"></ion-icon>
+              </div>
+               </div>
+
+              </div>
+            
+            </ion-card-header>
+            <ion-card-content>
+              <div class="detailsWrapper"> 
+                <div class="details">Street 1</div>
+                <div class="details">city, Telangana</div>
+                <div class="details">India , 506001</div>
+                <div class="details">9642020570</div>
+                <div class="details">sp0652800@gmail.com</div>
+              </div>
+              <div class="iventorySummary">
+                <div class="iconwrapper">
+                  <ion-icon name="folder-open-sharp"  size="large" id="groupIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="document-sharp" size="large" id="item"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="albums-sharp" size="large" id="quantityIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="wallet-sharp" size="large" id="valueIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md>
+          <ion-card class="cardwrapper">
+            <ion-card-header class="inventortDetails">
+              <div style="display: flex;">
+                <div style="width: 80%;">
+                  <ion-card-title>Card Title</ion-card-title>
+                </div>
+               <div style="display: flex;">
+                <div (click)="openmodal()">
+                  <ion-icon  color="primary" class="edit" name="create-outline"></ion-icon>
+                </div>
+                <div (click)="openmodal()">
+               <ion-icon class="trash" color="danger" name="trash-outline"></ion-icon>
+              </div>
+               </div>
+
+              </div>
+            
+            </ion-card-header>
+            <ion-card-content>
+              <div class="detailsWrapper"> 
+                <div class="details">Street 1</div>
+                <div class="details">city, Telangana</div>
+                <div class="details">India , 506001</div>
+                <div class="details">9642020570</div>
+                <div class="details">sp0652800@gmail.com</div>
+              </div>
+              <div class="iventorySummary">
+                <div class="iconwrapper">
+                  <ion-icon name="folder-open-sharp"  size="large" id="groupIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="document-sharp" size="large" id="item"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="albums-sharp" size="large" id="quantityIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="wallet-sharp" size="large" id="valueIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md>
+          <ion-card class="cardwrapper">
+            <ion-card-header class="inventortDetails">
+              <div style="display: flex;">
+                <div style="width: 80%;">
+                  <ion-card-title>Card Title</ion-card-title>
+                </div>
+                <div style="display: flex;">
+                  <div (click)="openmodal()">
+                    <ion-icon  color="primary" class="edit" name="create-outline"></ion-icon>
+                  </div>
+                  <div (click)="openmodal()">
+                 <ion-icon class="trash" color="danger" name="trash-outline"></ion-icon>
+                </div>
+                 </div>
+
+              </div>
+            
+            </ion-card-header>
+            <ion-card-content>
+              <div class="detailsWrapper"> 
+                <div class="details">Street 1</div>
+                <div class="details">city, Telangana</div>
+                <div class="details">India , 506001</div>
+                <div class="details">9642020570</div>
+                <div class="details">sp0652800@gmail.com</div>
+              </div>
+              <div class="iventorySummary">
+                <div class="iconwrapper">
+                  <ion-icon name="folder-open-sharp"  size="large" id="groupIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="document-sharp" size="large" id="item"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="albums-sharp" size="large" id="quantityIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+                <div class="iconwrapper">
+                  <ion-icon name="wallet-sharp" size="large" id="valueIcon"></ion-icon>
+                  <div>2</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
 
+  </div>
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button color="danger" (click)="openmodal()">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>  
+
 
 

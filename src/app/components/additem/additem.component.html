@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="document" size="large" id="item"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <!-- <img src="../../assets/icon/soocheelogo.png" style="height: 50px;"> -->
+      Add Item</ion-title>
+      <ion-buttons slot="end" (click)="closeModal()">
+        <ion-icon name="close-outline" size="large"></ion-icon>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="imgCol">
+        <img [src]="itemImage" (click)="takeSnap()">
+      </ion-col>
+      <ion-col size="12" >
+            <ion-label position="floating">Item Name</ion-label>
+            <ion-input type="text" required class="purchaseCol"></ion-input>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-label position="floating">Number of Quantity / units</ion-label>
+        <ion-input type="number" min='1' required class="purchaseCol"></ion-input>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-label position="floating">Min units</ion-label>
+        <ion-input type="number" min='1' required class="purchaseCol"></ion-input>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-row>
+          <ion-col size="12" class="purchaseCol">
+            <ion-label position="fixed" style="margin-bottom: 5px;font-size: 20px;">Scales Information</ion-label>
+              <div style="margin-top: 10px;">
+                <ion-input type="number" min='1' class="purchaseCol" placeholder="Selling Price" required></ion-input>
+              </div>
+              <div>
+                <ion-label position="fixed">Description</ion-label>
+                <ion-textarea type="text" class="purchaseCol" required></ion-textarea>
+              </div>
+          </ion-col>
+          <ion-col size="12" class="purchaseCol">
+            <ion-label position="fixed" style="margin-bottom: 5px;font-size: 20px;">Purchase Information</ion-label>
+              <div style="margin-top: 10px;">
+                <ion-input type="number" min='1' class="purchaseCol" placeholder="Cost Price" required></ion-input>
+              </div>
+              <div>
+                <ion-label position="fixed">Description</ion-label>
+                <ion-textarea type="text" class="purchaseCol" required></ion-textarea>
+              </div>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+      <ion-col size="12" >
+        <ion-label position="floating">QR / Barcode Number</ion-label>
+        <ion-input type="text" required class="purchaseCol"></ion-input>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-label position="floating">Select Inventery </ion-label>
+        <ion-select placeholder="Inventery Name" class="purchaseCol">
+          <ion-select-option value="1">Inventiry Name 1</ion-select-option>
+          <ion-select-option value="2">Inventiry Name 2</ion-select-option>
+        </ion-select>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-label position="floating">Select Folder</ion-label>
+        <ion-select placeholder="Inventery Name" class="purchaseCol">
+          <ion-select-option value="1">Folder 1</ion-select-option>
+          <ion-select-option value="2">Folder 2</ion-select-option>
+        </ion-select>
+      </ion-col>
+      <ion-col size="12" >
+        <ion-label position="floating">Product / Item Description</ion-label>
+        <ion-textarea type="text" required class="purchaseCol"></ion-textarea>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+</form>
+</ion-content>
