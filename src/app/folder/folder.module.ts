@@ -10,8 +10,9 @@ import { FolderPage } from './folder.page';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {InventoriesComponent} from './inventories/inventories.component';
 import {CustomersComponent} from './customers/customers.component';
-import {ItemsComponent} from './items/items.component'
-import {ComponentsModule} from '../components/components.module'
+import {ItemsComponent} from './items/items.component';
+import {ComponentsModule} from '../components/components.module';
+import {FoldersComponent} from './folders/folders.component'
 
 @NgModule({
   imports: [
@@ -21,6 +22,6 @@ import {ComponentsModule} from '../components/components.module'
     FolderPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [FolderPage,DashboardComponent,InventoriesComponent,CustomersComponent,ItemsComponent]
+  declarations: [FolderPage,DashboardComponent,InventoriesComponent,CustomersComponent,ItemsComponent,FoldersComponent]
 })
 export class FolderPageModule {}

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import {AddinventorydetailsComponent} from '../components/addinventorydetails/addinventorydetails.component'
-import {AdditemComponent} from '../components/additem/additem.component'
+import {AddinventorydetailsComponent} from '../components/addinventorydetails/addinventorydetails.component';
+import {AdditemComponent} from '../components/additem/additem.component';
+import {AddfolderComponent} from '../components/addfolder/addfolder.component'
 
 
 
@@ -22,6 +23,14 @@ export class ModalsService {
    async openModalItem(){
     const modal = await this.modalController.create({
       component:AdditemComponent,
+      backdropDismiss: false,
+    })
+    await modal.present()
+   let addedvalues= await modal.onWillDismiss();
+   }
+   async openModalFolder(){
+    const modal = await this.modalController.create({
+      component:AddfolderComponent,
       backdropDismiss: false,
     })
     await modal.present()

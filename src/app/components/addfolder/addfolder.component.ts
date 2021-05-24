@@ -2,20 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import { ActionSheetController } from '@ionic/angular';
+
 @Component({
-  selector: 'app-additem',
-  templateUrl: './additem.component.html',
-  styleUrls: ['./additem.component.scss'],
+  selector: 'app-addfolder',
+  templateUrl: './addfolder.component.html',
+  styleUrls: ['./addfolder.component.scss'],
 })
-export class AdditemComponent implements OnInit {
+export class AddfolderComponent implements OnInit {
   itemImage='/assets/item.jpeg'
 
-  constructor(public modalController:ModalController,private camera: Camera,private actionSheetController:ActionSheetController) { }
+  constructor(private modalController : ModalController,private camera:Camera , private actionSheetController :ActionSheetController){ }
 
   ngOnInit() {}
+
   closeModal(){
-    this.modalController.dismiss()
+   this.modalController.dismiss()
   }
+
   async takeSnap() {
     const actionSheet = await this.actionSheetController.create({
       header: "Select Image source",
@@ -55,23 +58,9 @@ export class AdditemComponent implements OnInit {
     }
     this.camera.getPicture(options).then((imageData) => {
       this.itemImage= "data:image/jpg;base64," + imageData;
-      // this.base64Conversion = 'data:image/jpeg;base64,' + imageData;
-      // this.displayImage = "data:image/jpg;base64," + imageData;
-      // this.mobiApiService.preferenceAvatarImg = this.displayImage;
-      // this.imageflag=true
-      // console.log(this.mobiApiService.preferenceAvatarImg)
-      // let cameraImageSelector = document.getElementById('camera-image');
-      // cameraImageSelector.setAttribute('src', this.displayImage);
-      // this.preferenceForm.markAsDirty();
     }, (err) => {
       console.log(err);
       // Handle error
     });
   }
-  setDefaultPic() {
-    let cameraImageSelector = document.getElementById('camera-image');
-    cameraImageSelector.setAttribute('src', "/assets/item.jpg");
-  }
-  
-
 }

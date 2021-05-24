@@ -11,6 +11,7 @@ import {ComponentsModule} from '../app/components/components.module';
 import {AddinventoryComponent} from './addinventory/addinventory.component';
 import { Camera } from '@ionic-native/camera/ngx';
 import { File } from '@ionic-native/file/ngx';
+import {environment} from '../environments/environment'
 @NgModule({
   declarations: [AppComponent,LoginComponent,AddinventoryComponent],
   entryComponents: [],

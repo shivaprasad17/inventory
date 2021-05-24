@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-icon name="folder-open-sharp"  size="large" id="groupIcon"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <!-- <img src="../../assets/icon/soocheelogo.png" style="height: 50px;"> -->
+      Add Folder</ion-title>
+      <ion-buttons slot="end" (click)="closeModal()" data-dismiss="modal">
+        <ion-icon name="close-outline" size="large"></ion-icon>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="imgCol">
+          <img [src]="itemImage" (click)="takeSnap()">
+        </ion-col>
+        <ion-col size="12" >
+          <ion-label position="floating">Folder Name</ion-label>
+          <ion-input type="text" required class="purchaseCol"></ion-input>
+        </ion-col>
+        <ion-col size="12" >
+            <ion-label position="floating">Labels</ion-label>
+            <ion-input type="text" required class="purchaseCol"></ion-input>
+          
+        </ion-col>
+        <ion-col>
+          <ion-chip outline color="primary">
+            <ion-icon ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
+            <ion-label>Madison</ion-label>
+            <ion-icon name="close-circle"></ion-icon>
+          </ion-chip>
+          <ion-chip outline color="primary">
+            <ion-icon ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
+            <ion-label>Madison</ion-label>
+            <ion-icon name="close-circle"></ion-icon>
+          </ion-chip>
+          <ion-chip outline color="primary">
+            <ion-icon ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
+            <ion-label>Madison</ion-label>
+            <ion-icon name="close-circle"></ion-icon>
+          </ion-chip>
+        </ion-col>
+        <ion-col size="12" >
+          <ion-label position="floating">Select Inventery </ion-label>
+          <ion-select placeholder="Inventery Name" class="purchaseCol">
+            <ion-select-option value="1">Inventiry Name 1</ion-select-option>
+            <ion-select-option value="2">Inventiry Name 2</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col size="12" >
+          <ion-label position="floating">Folder Description</ion-label>
+          <ion-textarea type="text" required class="purchaseCol"></ion-textarea>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>

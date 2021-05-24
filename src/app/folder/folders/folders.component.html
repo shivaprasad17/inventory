@@ -7,18 +7,23 @@
   <ion-list-header>
     Item List
   </ion-list-header>
-  <ion-item *ngFor="let student of students; index as i">
+  <div *ngFor="let student of students; index as i">
+  <ion-item class="folder-background-color">
 <ion-label>
   <ion-avatar slot="start">
     <img [src]='student.imageUrl'>
   </ion-avatar>
 </ion-label>
-    <ion-label>
+<ion-label>
+      <p>Folder Name</p>
       <h2>{{ student.itemName }}</h2>
-    </ion-label>
-    <ion-label class="rightcell">
-      <h3>Units : {{student.units}}</h3>
-      <p>Cost : {{student.costPerUnit}}</p>
-    </ion-label>
+</ion-label>
+<ion-label>
+  <h3>Folders : {{student.folders}}</h3>
+  <h3>Items : {{student.items}}</h3>
+</ion-label>
+
   </ion-item>
+</div>
+
 </ion-list>
